@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .banner {
+        position: relative;
+        height: 500px;
+        width: 1000px;
+        background-color: red;
+        /* padding: 30px; */
+      }
+      .banner .img1 {
+        position: absolute;
+        bottom: -100px;
+        right: 0px;
+        z-index: 999;
+      }
+       .banner .img2 {
+        position: absolute;
+        bottom: 0px;
+        left: 300px;
+        z-index: 9999;
+
+      }
+      .banner .circle{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        top: 50%;
+        left: 50%;
+        /* bottom: 50%; */
+        background-color: yellow;
+        z-index: 99999;
+        transform: translate(-50px, -50px);
+      }
+      .smallCircle{
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        position: absolute;
+        border-radius: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        line-height: 50px;
+        text-align: center;
+     
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+        <span class="circle">
+            <div class="smallCircle">
+                H
+            </div>
+        </span>
+      <!-- <img class="img1" src="https://picsum.photos/id/51/400/400" alt="" />
+      <img  class="img2" src="https://picsum.photos/id/52/400/400" alt="" /> -->
+    </div>
+   
+
+  </body>
+</html>

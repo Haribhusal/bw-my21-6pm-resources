@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+      }
+
+      .flex-item {
+        background: tomato;
+        padding: 10px;
+        border: 5px solid red;
+
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .flex1 {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 20em;
+      }
+      .flex2 {
+        flex-grow: 2;
+        flex-shrink: 4;
+        flex-basis: 20em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test"></div>
+    <div class="test2"></div>
+    <ul class="flex-container">
+      <li class="flex-item flex1">1</li>
+      <li class="flex-item flex2">2</li>
+    </ul>
+  </body>
+</html>

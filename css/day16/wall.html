@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wallwrapper {
+        display: flex;
+        height: 300px;
+        width: 1300px;
+        background-image: url("https://picsum.photos/id/51/1300/400");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        gap: 20px;
+      }
+      .wallwrapper .glassarea {
+        height: 300px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        /* background-color: red; */
+      }
+      .wallwrapper .glassarea:nth-child(2) {
+        display: flex;
+        background-color: transparent;
+      }
+      .wallwrapper .item {
+        flex: 1;
+        border: 5px solid #666;
+      }
+      .wallwrapper .item {
+        display: flex;
+        flex-direction: column;
+      }
+      .wallwrapper .item>div{
+        flex: 1;
+        border: 5px solid #777;
+      }
+      .wallwrapper .item .upper{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+      .wallwrapper .item .slide{
+        height: 20px;
+        width: 100%;
+        transform: skewX(20deg);
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wallwrapper">
+      <div class="glassarea"></div>
+      <div class="glassarea">
+        <div class="item">
+          <div class="upper">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+          </div>
+          <div class="lower"></div>
+        </div>
+       <div class="item">
+          <div class="upper">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+          </div>
+          <div class="lower"></div>
+        </div>
+      </div>
+      <div class="glassarea"></div>
+      <div class="glassarea"></div>
+    </div>
+  </body>
+</html>

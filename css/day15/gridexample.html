@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+      }
+      header {
+        grid-row: 1/2;
+        grid-column: 1/11;
+
+        color: white;
+        background-color: black;
+      }
+      aside {
+        grid-column: 1/4;
+        grid-row: 2/9;
+        background-color: aqua;
+      }
+      main {
+        grid-row: 2/9;
+        position: relative;
+        z-index: 99;
+        grid-column: 4/11;
+        background: red;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+      }
+      main .box{
+        background-color: white;
+      }
+
+      footer {
+        grid-row: 9/11;
+        grid-column: 1/11;
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>This is header</header>
+    <aside>This is side menu</aside>
+    <main>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+    </main>
+    <footer>This is footer</footer>
+  </body>
+</html>

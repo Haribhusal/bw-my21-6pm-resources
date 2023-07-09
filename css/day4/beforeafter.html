@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Pseudo Class Selector */
+      /* It is used to style the state */
+      /* a:link {
+      }
+      a:visited {
+      }
+      a:hover {
+      }
+      a:active {
+      } */
+      /* Pseudo Element Selector */
+      /* It is used to style specific part of the element/content */
+      div::before {
+        content: "<";
+        color: red;
+      }
+      div::after {
+        content: ">";
+        color: green;
+
+      }
+
+      p::first-line{
+        color: orange;
+      }
+
+      h1::first-letter{
+        background-color: yellow;
+        padding: 10px;
+        color: white;
+
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>This is a newspaper title</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium, maiores facere deleniti beatae voluptas, dolor excepturi voluptatum sunt nostrum doloremque aut sit et id harum eos? Illo, animi earum!
+    </p>
+    <!-- before -->
+    <div>
+      <!-- before -->
+      Hello
+      <!-- After -->
+    </div>
+    <!-- After -->
+
+
+  </body>
+</html>

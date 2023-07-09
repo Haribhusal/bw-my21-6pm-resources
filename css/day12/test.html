@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parentdiv {
+        height: 400px;
+        width: 400px;
+        background-color: red;
+        position: relative;
+      }
+      .parentdiv::before{
+        content: '';
+        height: 350px;
+        width: 350px;
+        background-color: green;
+        
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        color: wheat;
+    
+        
+      }
+      .parentdiv::after{
+
+          content: 'AsSAass';
+        height: 300px;
+        width: 300px;
+        background-color: orange;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentdiv"></div>
+  </body>
+</html>

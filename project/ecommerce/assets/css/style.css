@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+
+:root {
+  --primaryColor: #e3642a;
+  /* 80% */
+  --secondaryColor: #009e3e;
+  --gray: #eeeeee;
+  /* 20% */
+  --textColor: #333;
+  --gap: 24px;
+  --white: #ffffff;
+  --tsn: all 0.5s ease-out;
+  --font: "Ysabeau Infant", sans-serif;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.btn {
+  border: 0;
+  outline: none;
+  padding: 10px 15px;
+  font-family: var(--font);
+  cursor: pointer;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+i {
+  font-size: 22px;
+}
+a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+.input {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  color: var(--textColor);
+}
+
+header {
+  display: flex;
+  gap: var(--gap);
+  padding: 0 7%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+header form {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  display: block;
+  padding: 20px 10px;
+  transition: var(--tsn);
+  &:hover {
+    color: var(--primaryColor);
+  }
+}
+
+header form button {
+  margin-right: -35px;
+  position: relative;
+  z-index: 9;
+  transform: scaleX(-1);
+  border: none;
+  background-color: transparent;
+}
+header form input {
+  text-indent: 25px;
+  border-radius: 100px;
+  background-color: var(--gray);
+}
+header .buttons {
+  display: flex;
+}
+header .buttons .button {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+header .button span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 0px 5px;
+  border-radius: 3px;
+  color: var(--white);
+  background-color: var(--secondaryColor);
+}
+
+.hero-section {
+  @media screen and (max-width: 768px) {
+    border-top: 1px solid red;
+    padding: 30px 0;
+    margin: 30px 0;
+  }
+
+  & .container {
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    & .text {
+      & h1 {
+        font-size: 56px;
+        line-height: 64px;
+        animation: fadeInUp 0.5s ease-in-out;
+        @media screen and (max-width: 768px) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      & p {
+        font-size: 22px;
+        margin: 20px 0;
+        animation: fadeInUp 0.5s ease-in-out;
+        animation-delay: 200ms;
+      }
+      & .btn {
+        background-color: var(--primaryColor);
+        color: var(--white);
+        /* animation: fadeInUp 0.5s ease-in-out; */
+        /* animation-delay: 400ms; */
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}

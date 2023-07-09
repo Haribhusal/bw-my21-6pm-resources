@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        counter-reset: itemCount;
+      }
+
+      .list .item::before{
+        counter-increment: itemCount;
+        content: counter(itemCount) '.';
+      }
+
+      .list .item{
+        counter-reset: subitem;
+        margin-bottom: 10px;
+      }
+      .list .item  .subitem::before{
+        counter-increment: subitem;
+        content:counter(itemCount) '.'  counter(subitem) '.';
+
+
+      }
+
+      .list .item .subitem{
+        padding-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+        <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+
+          <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+          <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="subitem">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </div>
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+        quisquam!
+      </div>
+    </div>
+  </body>
+</html>

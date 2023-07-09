@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background: url("https://picsum.photos/id/42/1000/300");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+        min-width: 400px;
+        background-color: orange;
+      }
+
+      @media screen and (max-width: 678px){
+        form{
+            background-color: red;
+              min-width: 300px;
+        }
+
+      }
+
+      form img {
+        height: 60px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <img src="https://picsum.photos/id/51/100/100" alt="" />
+      <h3>Login Now</h3>
+      <p>Please enter your login credentials.</p>
+
+      <div class="form-group">
+        <label for="name">Username or email</label>
+        <input type="email" class="form-control" placeholder="Enter email..." />
+      </div>
+      <div class="form-group">
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          id="pass"
+          class="form-control"
+          placeholder="Enter Password..."
+        />
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

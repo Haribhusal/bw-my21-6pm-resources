@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        font-size: 50px;
+        background-color: yellow;
+        /* transform: translate(100px); */
+        /* margin-left: 100px; */
+        transition: all 0.5s ease;
+      }
+      .box:hover{
+        transform: matrix(1, 1.03, 0, 1.5, 10, 10);
+
+      }
+    </style>
+  </head>
+  <body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia
+    eos reprehenderit molestias at odit, obcaecati alias distinctio asperiores?
+    Veritatis nobis iure quod hic fugiat cum beatae sed voluptates aspernatur!
+    <div class="box">Hello</div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quisquam rerum
+    dolorem itaque distinctio est quibusdam officia, corporis, facere
+    necessitatibus, enim vero debitis iusto tempora beatae non qui repellendus
+    dolore!
+
+    <!-- 
+The matrix() method combines all the 2D transform methods into one.
+
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+
+The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+     -->
+  </body>
+</html>

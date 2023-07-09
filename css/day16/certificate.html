@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .wrapper {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrapper .info{
+        display: flex;
+        /* background-color: red; */
+        gap: 30px;
+        flex: 4;
+      }
+      .wrapper .image{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+      }
+      .wrapper .info .left, .wrapper .info .right{
+        flex: 1;
+      }
+      .wrapper .userInfoItem{
+        display: flex;
+      }
+      .wrapper .userInfoItem h4, .wrapper .userInfoItem strong {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="info">
+        <div class="left">
+          <div class="userInfoItem">
+            <h4>ROLL NUMBER</h4>
+            <strong>161066</strong>
+          </div>
+          <div class="userInfoItem">
+            <h4>CANDIDATE'S NAME</h4>
+            <strong>EDWARD THOMAS</strong>
+          </div>
+          <div class="userInfoItem">
+            <h4>ROLL NUMBER</h4>
+            <strong>161066</strong>
+          </div>
+          <div class="userInfoItem">
+            <h4>CANDIDATE'S NAME</h4>
+            <strong>EDWARD THOMAS</strong>
+          </div>
+        </div>
+        <div class="right">
+            <div class="userInfoItem">
+            <h4>Admission No.</h4>
+            <strong>2344235</strong>
+          </div>
+          <div class="userInfoItem">
+            <h4>CLASS</h4>
+            <strong>1(A)</strong>
+          </div>
+          <div class="userInfoItem">
+            <h4>ROLL NUMBER</h4>
+            <strong>161066</strong>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="https://picsum.photos/id/41/100/100" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

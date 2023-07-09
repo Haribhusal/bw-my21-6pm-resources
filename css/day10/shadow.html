@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .banner{
+            height: 100px;
+            width: 500px;
+            background-color: red;
+            border: 10px solid transparent;
+            border-image: url('./isolated-set-flowers_1308-38230.avif');
+              border-image-width: 100px;
+              border-image-slice: 100;
+        }
+      .box {
+        height: 100px;
+        margin: 100px;
+        width: 100px;
+        background-color: white;
+        border: 1px solid black;
+        box-shadow: 70px 30px 100px red;
+      }
+
+      h1 {
+        font-size: 200px;
+        margin: 100px auto;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+        position: relative;
+        left: 0;
+        text-shadow: 1px 1px 0px #c4dbe2, 2px 2px 0px #b4d1d9,
+          3px 3px 0px #a6c6cf, 4px 4px 0px #94b8c3, 5px 5px 0px #87aeb9,
+          6px 6px 0px #7aa3af, 7px 7px 0px #6d97a3, 8px 8px 0px #618b98,
+          9px 9px 0px #56818e, 10px 10px 0px #4c7683,
+          15px 15px 25px rgba(0, 0, 0, 0.9);
+        transition: 0.5s ease-in-out;
+      }
+
+      h1:hover {
+        left: 20px;
+        text-shadow: -1px 1px 0px #c4dbe2, -2px 2px 0px #b4d1d9,
+          -3px 3px 0px #a6c6cf, -4px 4px 0px #94b8c3, -5px 5px 0px #87aeb9,
+          -6px 6px 0px #7aa3af, -7px 7px 0px #6d97a3, -8px 8px 0px #618b98,
+          -9px 9px 0px #56818e, -10px 10px 0px #4c7683,
+          -15px 15px 25px rgba(0, 0, 0, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner"></div>
+    <!-- <img src="./isolated-set-flowers_1308-38230.avif" alt=""> -->
+    <h1>Hello Broadway</h1>
+    <div class="box"></div>
+  </body>
+</html>

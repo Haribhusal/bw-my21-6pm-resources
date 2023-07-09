@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            /* animation-name: movetoright; */
+            background-color: yellow;
+            /* animation-delay: 5s; */
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            box-shadow: 30px 30px  10px rgba(0,0,0,0.9);
+        }
+
+
+        @keyframes movetoright {
+            from{
+                transform: translateX(0px) rotate(0) skew(0);
+                box-shadow: 30px 30px 30px rgba(0,0,0,0.4);
+                background-color: red;
+               
+            }
+            to{
+                transform: translateX(700px) rotate(180deg) skew(50deg);
+                /* border-radius: 50px; */
+                box-shadow: 0px 100px 50px rgba(0,0,0,0.9);
+                background-color: olivedrab;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      canvas {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myDrawing" height="200" width="300"></canvas>
+
+    <script>
+      let drawing = document.getElementById("myDrawing");
+
+      let pi = 3.141592653589793238;
+      let context = drawing.getContext("2d");
+
+      context.beginPath();
+      context.arc(100, 100, 70, 5, 2 * pi);
+      context.stroke();
+
+      //    context.moveTo(0,0);
+      //    context.lineTo(300, 200);
+      //    context.stroke();
+
+    //   var c = document.getElementById("myCanvas");
+    //   var ctx = c.getContext("2d");
+    //   ctx.moveTo(0, 0);
+    //   ctx.lineTo(200, 100);
+    //   ctx.stroke();
+    </script>
+  </body>
+</html>

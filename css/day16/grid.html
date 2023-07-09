@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-areas: 'head head head head head head head head'
+            'menubar menubar menubar content content content content content'
+            'menubar menubar menubar content content content content content'
+            'menubar menubar menubar content content content content content'
+            'menubar menubar menubar content content content content content'
+            'menubar menubar menubar content content content content content'
+            'menubar menubar menubar content content content content content'
+            'foot foot foot foot foot foot foot foot'
+            ;
+        }
+        header{
+            grid-area: head;
+            background-color: yellow;
+        }
+        aside{
+            grid-area: menubar;
+            background-color: black;
+        }
+
+        main{
+            grid-area: content;
+            background-color: aqua;
+        }
+        footer{
+            grid-area: foot;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>This is Header</header>
+    <aside>This is sidebar/Menubar</aside>
+    <main>This is main content of the website</main>
+    <footer>This is footer</footer>
+</body>
+</html>
